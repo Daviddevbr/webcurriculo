@@ -1,0 +1,310 @@
+*{
+    box-sizing:border-box;
+}
+
+
+@font-face {
+    font-family: 'american_captainregular';
+    src: url('/fonts/american_captain-webfont.woff') format('woff');
+       
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'coolveticacondensed_regular';
+    src: url('/fonts/coolvetica_condensed_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'office_squareregular';
+    src: url('/fonts/office_square_df-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pixelmixregular';
+    src: url('/fonts/pixelmix-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+background fundo foto
+/*======*/
+#quadrado{
+    position: absolute;
+    
+    left: -500px;
+    z-index: -1;
+    width: 1300px;
+    height: 1000px;
+    border-radius: 700px 700px 0px 0px;
+    background-image: linear-gradient(to bottom, #f5d800, white);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.titulo{
+    margin: 0px;
+    padding: 30px;
+    width: 100%;
+    background-color: #FFE200;
+    border-top:solid 10px black  ;
+    border-right:solid 10px black  ;
+    font-size: 20pt;
+    font-family: 'american_captainregular';
+    border-radius: 0px 0px 0px 100px;
+}
+/*===AREA DE INTRO===*/
+.corpo{
+  
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+}
+.corpoBiografia{
+    min-width: 320px;
+}
+.biografia{
+    font-size: 19pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'coolveticacondensed_regular';
+   
+}
+.tituloBio{
+    font-family: 'american_captainregular';
+    font-size: 20pt;
+}
+#fotoPerfil{
+   width: 80%;
+}
+.tituloSkills{
+    font-family: 'american_captainregular';
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logoSkills{
+    width: 70px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.logoSkills:hover{
+    cursor: pointer;
+    width: 75px;
+    transition: 0.5s;
+}
+.corpovideo{
+    width: 1000px;
+    min-width: 300px;
+    
+}
+.opicaoVideos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+.videoBio{
+    border-radius: 20px;
+}
+.corpoBiografia{
+    width: 40%;
+    margin-right: 10px;
+}
+/*===AREA DE INTRO VIDEOS===*/
+.opicaoPlyer{
+    display: flex;
+    justify-content: center;
+}
+.player{
+    border: none;
+    background-color: #FFE200;
+    font-weight: 800;
+    border-radius: 20px 5px 20px 5px;
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+    border-bottom:solid 5px black  ;
+    border-right:solid 5px black  ;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'pixelmixregular';
+
+}
+.player:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: #FFE200;
+    width: 220px;
+    height: 55px ;
+
+}
+/*===AREA DESIGN===*/
+.corpoTituloDesign{
+    
+    margin:5% 5% 2% 5%;
+    background-color: #FFE200;
+ 
+    padding: 40px;
+    border-radius: 100px 25px 100px 25px;
+    
+}
+
+.artesDesign{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+}
+.fotosDesign{
+    min-width: 300px;
+    width: 500px;
+    border-radius: 20px;
+  
+   
+
+    
+  
+}
+/*===AREA DE WEBDESIGN===*/
+.webDesign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 200px 0px 200px;
+    
+}
+.corposite{
+
+    background-image:url("../imagens/webdesign/Router.png");
+    border-radius: 20px;
+    margin: 20px;
+    width: 500px;
+    min-width: 300px;
+    height: 333px;
+   
+
+}
+.corposite:nth-child(2){
+    background-image:url("../imagens/webdesign/vaniatoledo.jpg") ;
+}
+.corposite:nth-child(3){
+    background-image:url("../imagens/webdesign/simuladorjuros.png") ;
+}
+.corposite:nth-child(4){
+    background-image:url("../imagens/webdesign/controledegastos500.jpg") ;
+}
+.modalWebDesign{
+  
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFE200;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: 100%;
+
+}
+.tituloSite{
+    
+    font-family: 'office_squareregular';
+    font-size: 15pt;
+}
+.buttonWebDesign{
+    background-color: #FFE200;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'pixelmixregular';
+}
+a{
+    text-decoration: none;
+    color:black;
+
+}
+/*===AREA DE RODAPÉ===*/
+#titulofooter{
+    font-family: 'pixelmixregular';
+    position: relative;
+    padding: 1% 0% 0% 30%;
+}
+/*===ICONES DAS REDES===*/
+.redescontato{
+    background-color: #FFE200;
+    border-bottom:solid 10px black ;
+    border-left:solid 10px black ;
+}
+.redessocial{
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    width: 50px;
+    filter: grayscale(50%);
+    transition: 0.5s;
+}
+.redes:hover{
+    transition: 0.5s;
+    width: 55px;
+    filter: grayscale(0%);
+}
+.corpoTituloWebDesign{
+    font-family: 'american_captainregular';
+    margin:5% 5% 2% 5%;
+    background-color: #FFE200;
+   
+    padding: 40px;
+    border-radius: 100px 25px 100px 25px;
+
+}
+
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+
+}
+
+
+/*===CSS DE TERCEIRO PARA MODIFICAR O SCROOL===*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+    
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE200; 
+    border-radius: 10px;
+  }
+  
+  
