@@ -4,6 +4,8 @@ let fotos = document.querySelectorAll("img.fotosDesign");
 let corpoSite = document.querySelectorAll("div.corposite");
 let modal = document.querySelectorAll("section.modalWebDesign")
 
+window.alert("apenas um preview do meu projeto pessoal")
+
 botons.forEach((item, index) => {//estrutura de laço forEach que tem como parametro o item nodeList e o Index
 
     item.addEventListener("click", () => {//função de click que incia quando o botton for clicado
